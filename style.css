@@ -1,0 +1,89 @@
+body {
+    background-size: 400% 400%;
+    background-image: linear-gradient(45deg, #042CDC 0%,#0532FC 25%, #FBE660 75%
+    ,#FCDA06 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    animation: background-gradient 15s ease infinite;
+}
+
+.area-login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-login-box {
+    width: 355px;
+    height: 320px;
+    background-color: #FCFCFC;
+    border-radius: 6px;
+    box-shadow: 5px 3px 2px #1B1F27;
+}
+
+.area-login-box form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-login-box form input {
+    width: 300px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: #1B1F27;
+    color: #FCFCFC;
+    font-style: bold;
+}
+
+.area-login-box form input::placeholder{
+    font-style: italic;
+}
+
+.area-login-box form input[type="submit"]{
+    cursor: pointer;
+    background-color: #042CDC;
+    font-weight: bold;
+}
+
+.area-login-box form input[type="submit"]:hover{
+    outline: initial;
+    border: #1B1F27 2px solid;
+}
+
+.area-login-box form input[type="submit"]:focus{
+    outline-color: #1B1F27;
+}
+
+.area-login-box form input:focus{
+    outline-color: #042CDC;
+}
+
+.area-login-box-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.area-login-box-logo img {
+    margin: 13px;
+    width: 50%;
+
+}
+
+@keyframes background-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
